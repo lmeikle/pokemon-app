@@ -1,0 +1,32 @@
+# serverless.yml
+service: pokemon-service
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: eu-west-2
+  memorySize: 512
+
+functions:
+  pokemonFunc:
+    handler: index.handler
+    events:
+      - http:
+          path: pokemon
+          method: get
+      - http:
+          path: pokemon/{id}
+          method: get
+      - http:
+          path: pokemon
+          method: post
+      - http:
+          path: pokemon/{id}
+          method: put
+      - http:
+          path: pokemon/{id}
+          method: delete
+
+plugins:
+  - serverless-offline
