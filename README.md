@@ -41,3 +41,7 @@ https://dev.to/sagar/build-a-restful-api-with-the-serverless-framework-ene?utm_s
   POST - https://vrzq1d0s0m.execute-api.eu-west-2.amazonaws.com/dev/pokemon<br>
   PUT - https://vrzq1d0s0m.execute-api.eu-west-2.amazonaws.com/dev/pokemon/{id}<br>
   DELETE - https://vrzq1d0s0m.execute-api.eu-west-2.amazonaws.com/dev/pokemon/{id}<br>
+
+### I have deleted my DB instance as it was going to start charging, but the snapshot is here:
+
+https://eu-west-2.console.aws.amazon.com/rds/home?region=eu-west-2#snapshot:engine=mysql;id=pokemondb-final-snapshot
